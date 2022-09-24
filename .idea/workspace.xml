@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="904bc21d-18c1-405f-bdc0-4432e57f67fe" name="Changes" comment="" />
+    <list default="true" id="904bc21d-18c1-405f-bdc0-4432e57f67fe" name="Changes" comment="initial settings">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/Api/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/Api/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +140,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2Eg7SK2kjrr3mYw9oTrol06bkEM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -157,7 +169,16 @@
       <workItem from="1663006206303" duration="250000" />
       <workItem from="1663006473584" duration="2724000" />
       <workItem from="1664027092705" duration="6554000" />
+      <workItem from="1664034807584" duration="933000" />
     </task>
+    <task id="LOCAL-00001" summary="initial settings">
+      <created>1664035044449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664035044449</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rotas de login e logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="rotas de login e logout" />
+    <MESSAGE value="initial settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial settings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
