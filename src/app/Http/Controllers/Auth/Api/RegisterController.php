@@ -8,13 +8,14 @@ use App\Models\User;
 
 class RegisterController extends Controller
 {
-    public function Register(Request $request, User $user)
+    public function Register(Request $request, User $user): \Illuminate\Http\JsonResponse
     {
         // Lembrar de validar request
         $userData = $request->only('name', 'email', 'password');
         $userData['password'] = bcrypt($userData['password']); // ver como usar mutator pra isso aqui
-        if (!$user = $user->create($userData))
+        if (!$user = $user->create($userData)) {
             abort(500, 'Erro ao criar novo ususário');
+        }
 
         //$token = auth()->user()->createAccessToken(); enviar token após registrar?
 

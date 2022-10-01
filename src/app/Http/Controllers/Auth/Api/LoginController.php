@@ -5,16 +5,18 @@ namespace App\Http\Controllers\Auth\Api;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use \Illuminate\Http\JsonResponse;
 
 class LoginController extends Controller
 {
-    public function login(Request $request)
+    public function login(Request $request): JsonResponse
     {
         // Lembrar de validar request
         $credentials = $request->only('email', 'password');
 
-        if(!auth()->attempt($credentials))
+        if(!auth()->attempt($credentials)) {
             abort(401, 'Credenciais inválidas');
+        }
 
         $token = auth()->user()->createToken('auth_token');
 
@@ -26,7 +28,7 @@ class LoginController extends Controller
             ]);
     }
 
-    public function logout()
+    public function logout(): JsonResponse
     {
         // auth()->user()->tokens()->delete(); // Remove todos os tokens do usuário
 
