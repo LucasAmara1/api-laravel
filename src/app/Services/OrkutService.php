@@ -11,8 +11,12 @@ class OrkutService implements SocialMediaServiceInterfaces
         protected string $apiKey,
     ) { }
 
-    public function share(String $email): array
+    public function share(String $email, ?String $message): array
     {
-        return ['message' => 'Olá, estou compartilhando meu email no Orkut: ' . $email, 'success' => true];
+        return [
+            'message' => $message ?? 'Olá, estou compartilhando meu email no orkut: ',
+            'email' => $email,
+            'success' => true
+        ];
     }
 }
