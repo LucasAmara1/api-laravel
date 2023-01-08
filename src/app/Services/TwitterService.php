@@ -10,10 +10,11 @@ class TwitterService implements SocialMediaServiceInterfaces
         protected string $apiKey,
     ) { }
 
-    public function share(String $email): array
+    public function share(String $email, ?String $message): array
     {
         return [
-            'message' => 'Olá, estou compartilhando meu email no twitter: ' . $email,
+            'message' => $message ?? 'Olá, estou compartilhando meu email no twitter: ',
+            'email' => $email,
             'success' => true
         ];
     }
